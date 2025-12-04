@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BN UnitConvertor - TemperatureConvertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">   
+        
+        <img src="Assets/reset_button.png" class="clear" width="30" alt="">
+        
+        <h1 style="display: inline;">Temperature</h1>
+
+        <img src="/Assets/menu-icon.png" width="30" id="menu" alt="">
+
+        <div class="inner-container">
+
+        <!-- LEFT -->
+            <div class="box left">
+            <select name="sfrom" class="Tsele" id="fromTemperatureSelector">
+                <option value="C">C</option>
+                <option value="F">F</option>
+                <option value="K">K</option>
+            </select>
+
+            <input type="number" class="inputt" id="tempInput">
+            </div>
+        <img src="Assets/transfer-icon.png" class="tra" width="120" height="120"  alt="">
+
+        <!-- RIGHT -->
+
+        <div class="box right">
+            <select name="sto" class="Tsele" id="toTemperatureSelector">
+                <option value="C">C</option>
+                <option value="F">F</option>
+                <option value="K">K</option>
+            </select>
+        <p name="" class="result" id="tempRes"></p>
+        </div>
+
+
+        </div>
+                <button id="calc" onclick="convertTemp(getTemperatureValue(), tempFrom(), tempTo())">Calculate</button>
+            <div class="dropDown">
+            <div class="inner-drop">
+            <a href="length.html"><button>LENGTH</button></a>
+                <div class="divider"></div>
+            <a href="weight.html"><button>WEIGHT</button>
+                <div class="divider"></div>
+            <a href="index.html"><button>HOME</button>
+                <div class="divider"></div>
+            </div>
+            </div>
+        </div>   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: "Outfit", sans-serif;
+    color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    
+    background-color: #0b2e33;
+    display: flex;
+    width: 600px;
+    height: 550px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    padding: 0 20px;
+    backdrop-filter: blur 10px;
+}
+
+.home-header{
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.1em;
+    margin: 10px 10px;
+}
+
+.home-header h1{
+    color: #b8e3e9;
+}
+
+.inner-container{
+    width: 100%;
+    text-align: center;
+}
+
+.inner-container h1{
+    color: #cfe6e5;
+}
+
+.inner-container button{
+    width: 100px;
+    padding: 2px 0;
+    padding-top: 35px;
+    border: 0.7px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: #98b6ba;
+    overflow: hidden;
+    font-size: 15px;
+    transition: border 0.5s;
+    transition: scale 0.2s;
+    color: #0a282d;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 10px;
+}
+
+.btn img{
+    /* align-self: center;
+    justify-self: center; */
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.btn span{
+    margin-top: 20px;
+}
+
+.inner-container button:hover{
+    border: 0.7px solid  #94b1b5;
+    background-color: #94b1b5;
+    scale: 1.01;
+}
+
+
+@media (max-width: 889px){
+    .container{
+        width: 40%;
+        height: 90vh;
+    }
+
+    .home-header h1{
+        font-size: 20px;
+        color: #b8e3e9;
+        } 
+    .inner-container h1{
+        font-size: 18px;
+        color: #cfe6e5;
+    }
+
+    .buttons{
+        flex-wrap: wrap;
+    }
+}

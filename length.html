@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BN UnitConvertor - LengthConvertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- <div class="home-header">
+        <h1 style="text-decoration: none;">BN UnitCovertor</h1>
+        </div> -->
+
+        <img src="Assets/reset_button.png" class="clear" width="30" alt="">
+
+        <h1 style="display: inline;">Length</h1>
+
+        <img src="/Assets/menu-icon.png" width="30" id="menu" alt="">
+
+        <div class="inner-container">
+
+            <!-- LEFT -->
+
+        <div class="box left">
+            <!-- <h3>from</h3> -->
+            <select name="sfrom" class="Lsele" id="fromLengthSelector">
+                <option value="M">M</option>
+                <option value="km">KM</option>
+                <option value="cm">CM</option>
+                <option value="mm">MM</option>
+                <option value="mi">MI</option>
+                <option value="ft">FT</option>
+                <option value="in">INCH</option>
+            </select>
+
+        
+            <input type="number" class="inputt" id="lenInput">
+
+        </div>
+
+            <img src="Assets/transfer-icon.png" class="tra" width="120" height="120"  alt="">
+
+            <!-- RIGHT -->
+
+        <div class="box right">
+            <!-- <h3>to</h3> -->
+            <select name="sfrom" class="Lsele" id="toLengthSelector">
+                <option value="M">M</option>
+                <option value="km">KM</option>
+                <option value="cm">CM</option>
+                <option value="mm">MM</option>
+                <option value="mi">MI</option>
+                <option value="ft">FT</option>
+                <option value="in">INCH</option>
+            </select>
+
+        
+        <p name="" class="result" id="lenRes"></p>
+        </div>
+
+        </div> 
+        
+        <!-- END -->
+
+        <button id="calc" onclick="lenCalc(getLengthValue(), lenFrom(), lenTo())">Calculate</button>
+
+            <!-- DROPDOWN -->
+
+        <div class="dropDown">
+            <div class="inner-drop">
+            <a href="weight.html"><button>WEIGHT</button></a>
+                <div class="divider"></div>
+            <a href="temperature.html"><button>TEMPERATURE</button>
+                <div class="divider"></div>
+            <a href="index.html"><button>HOME</button>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
